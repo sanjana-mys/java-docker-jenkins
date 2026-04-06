@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/sanjana-mys/java-docker-jenkins.git'
-            }
-        }
-
         stage('Build Java') {
             steps {
                 bat 'javac HelloWorld.java'
